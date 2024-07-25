@@ -228,98 +228,6 @@
         </section>
         <!-- Want To Work End -->
 
-        <!-- client-comments -->
-        <section class="client-comments section-paddingt30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-8 col-md-10">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-70">
-                            <h2>Some Possitive Feedback  That Encourage Us</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- latest-blog-area start -->
-            <div class="latest-blog-area">
-                <div class="container">
-                    <div class="custom-row">
-                        <div class="blog-active">
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="assets/img/gallery/blog1.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>   
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="assets/img/gallery/blog2.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>   
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="assets/img/gallery/blog3.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>   
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="assets/img/gallery/blog2.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>   
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>           
-            <!-- End latest-blog-area -->
-        </section>
-     
         <!-- Contact Info Start -->
         <section class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
             <div class="container">
@@ -332,11 +240,29 @@
                       </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
-                        <form action="#" class="contact-wrapper">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="email" name="email" placeholder="Email Address">
-                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                            <button class="submit-btn2" type="submit">Send Message</button>
+                        <form action="#" class="contact-wrapper needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your full name.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <button class="btn btn-primary submit-btn2" type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -373,10 +299,7 @@
                             <!-- Footer Social -->
                             <div class="footer-social f-right">
                                 <a>Stay Connected</a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/irshad_mglm?igsh=MW1jbzl5Ym12bzAyZQ=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -423,5 +346,18 @@
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
         
+
+        <script>
+           document.querySelectorAll('.needs-validation').forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+        </script>
+    
     </body>
 </html>

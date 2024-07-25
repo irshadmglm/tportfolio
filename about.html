@@ -275,11 +275,29 @@
                       </div>
                     </div>
                     <div class="col-xl-5 col-lg-5">
-                        <form action="#" class="contact-wrapper">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="email" name="email" placeholder="Email Address">
-                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                            <button class="submit-btn2" type="submit">Send Message</button>
+                        <form action="#" class="contact-wrapper needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your full name.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" placeholder="Your Message" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <button class="btn btn-primary submit-btn2" type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -316,10 +334,7 @@
                             <!-- Footer Social -->
                             <div class="footer-social f-right">
                                 <a>Stay Connected</a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/irshad_mglm?igsh=MW1jbzl5Ym12bzAyZQ=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -367,5 +382,16 @@
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
         
+        <script>
+            document.querySelectorAll('.needs-validation').forEach(form => {
+             form.addEventListener('submit', event => {
+                 if (!form.checkValidity()) {
+                     event.preventDefault();
+                     event.stopPropagation();
+                 }
+                 form.classList.add('was-validated');
+             }, false);
+         });
+         </script>
     </body>
 </html>
